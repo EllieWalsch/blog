@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Why MVC is so important",
+    "description": "MVC allows developers to maintain a true separation of concerns. The Model is for data, the View is for design, and the Controller is for application logic."
+  },
+  {
+    "title": "Object-Relational Mapping",
+    "description": "I have really loved learning about ORMs!"
+  }
+]
