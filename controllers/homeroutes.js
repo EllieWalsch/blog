@@ -18,4 +18,21 @@ router.get('/', async (_, res) => {
   // get all posts
 });
 
+router.get('/post/:id', async (req, res) => {
+  try {
+    const postData = await Post.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
+    res.status(200).json(postData)
+  } catch (err) {
+    res.status(500).json(err);
+  }
+  // get one post by its id
+});
+
 module.exports = router;
