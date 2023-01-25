@@ -30,4 +30,10 @@ router.get('/post/:id', async (req, res) => {
   // get one post by its id
 });
 
+router.get('/login', (req, res) => {
+
+  res.render('login');
+  // renders login page
+});
+
 module.exports = router;
