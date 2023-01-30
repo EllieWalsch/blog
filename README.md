@@ -15,3 +15,4 @@ Once complete, users may view the webpage and navigate the following features:
 - comment on an exisiting post
 - delete or update a post
 
+[Click here to view the webpage.](https://ellie-tech-blog.herokuapp.com/)
