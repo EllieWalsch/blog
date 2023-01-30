@@ -21,9 +21,18 @@ router.get('/post/:id', async (req, res) => {
           model: User,
           attributes: ['name'],
         },
+        {
+          model: Comment,
+          attributes: ['comment, user_id']
+        }
       ],
     });
-    res.status(200).json(postData);
+
+    const post = postData.get({ plain: true });
+
+    res.render('post', {
+      ...post
+    });
   } catch (err) {
     res.status(500).json(err);
   }
