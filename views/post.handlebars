@@ -1,0 +1,24 @@
+<div class="text-center">
+  <h2>{{title}}</h2>
+  <p>{{description}}</p>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <form class='form comment-form'>
+    <h3>
+        Leave a comment
+    </h3>
+      <div class='form-group'>
+        <input class='form-input' type='text' id='comment' />
+      </div>
+      <div class='form-group'>
+        <button class='btn btn-primary' type='submit'>Submit</button>
+      </div>
+    </form>
+</div>
+
+<div class="text-center">
+    <p class="comment">
+
+    </p>
+</div>
+
+<script src="./js/comment.js"></script>
